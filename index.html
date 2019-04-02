@@ -3,174 +3,213 @@
 <title>First portfolio website</title>
 
 <head>
-	<style type="text/css">
-		body {
-			font-family: serif;
-			color: #000;
-			background-image: url(assets/sketch/images/city.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-attachment: fixed;
-}
-        .text{
-            color:#6699cc   
+    <style type="text/css">
+        body {
+            font-family: serif;
+            color: #000;
+            background-image: url(assets/sketch/images/city.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        
+
+        .text {
+            color: yellow;
+            font-family:serif; 
         }
 
-		p.one {
-			border-style: double;
-			border-color: white;
-			border-width: 15px;
-			color: white;
-			padding: 15px;
-			background: #ccc;
-			box-shadow: 5px 10px 18px #000;
-			text-align: center;
-			font-style: italic;
-			text-shadow: 2px 2px #000;
-			box-sizing: border-box;
-			width: 600px;
-			margin: auto;
-			background-image: url(assets/sketch/images/subway.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-		}
+        .navc {
+            float: left;
+        }
 
-		p.exp1 {
-			border-style: double;
-			border-width: 7px;
-			background: #ccc;
-			padding: 10px;
-			box-shadow: 5px 10px 18px #000;
-			font-family: "Times New Roman", serif;
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: #333;
+        }
 
-		}
+        li a:hover:not(.active) {
+            background-color: cadetblue;
+            color: black;
+        }
 
-		#content {
-			color: white;
-			font-style: italic;
-			border-style: solid;
-			margin: auto;
-			box-sizing: border-box;
-			width: 300px;
-			background: rgba(192, 192, 192, 0.6);
 
-		}
+        a.active {
+            background-color: #09BC8A;
+            color: white;
+        }
+        
 
-		header.menu {
-			border-style: solid;
-			background: #ccc;
-			background-image: url(assets/sketch/images/track.jpg);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			box-sizing: border-box;
-			width: 1000px;
-			margin: auto;
-			color: #09BC8A
-		}
 
-		.box1 {
-			display: inline-block;
-			width: 300px;
-			text-align: left;
-			padding: 30px;
-			background-color: #ddd;
-			border-radius: 3px;
-			margin: 15px;
-			vertical-align: top;
-			border-style: solid;
-			border-color: #09BC8A;
-			height: 300px;
-			background-image:url(assets/sketch/images/isl.jpg);
-			background-repeat: no-repeat;
-			background-position: top;
-			font-style: italic;
-			color:#00171F;
-		}
+        p.one {
+            border-style: double;
+            border-color: white;
+            border-width: 15px;
+            color: white;
+            padding: 15px;
+            background: #ccc;
+            box-shadow: 5px 10px 18px #000;
+            text-align: center;
+            font-style: italic;
+            text-shadow: 2px 2px #000;
+            box-sizing: border-box;
+            width: 600px;
+            margin: auto;
+            background-image: url(assets/sketch/images/subway.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
 
-		.box2 {
-			display: inline-block;
-			width: 300px;
-			text-align: left;
-			padding: 30px;
-			background-color: #ddd;
-			border-radius: 3px;
-			margin: 15px;
-			border-style: solid;
-			border-color: #09BC8A;
-			height: 300px;
-			background-image: url(assets/sketch/images/sky.jpg);
-			background-repeat: no-repeat;
-			color:#00171F;
-			font-style: italic;
-		}
+        }
 
-		.con {
-			text-align: center;
-			padding: 15px;
-		}
-	</style>
-    
-    <ul class>
-        <li><a class="active" href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="contact.html">contact</a></li>
-     </ul>
-    
-	<h1 id="h">
-		<p class="one">My Website</p>
-	</h1>
+        p.exp1 {
+            border-style: double;
+            border-width: 7px;
+            background: #ccc;
+            padding: 10px;
+            box-shadow: 5px 10px 18px #000;
+            font-family: "Times New Roman", serif;
+
+        }
+
+        #content {
+            color: white;
+            font-style: italic;
+            border-style: solid;
+            margin: auto;
+            box-sizing: border-box;
+            width: 300px;
+            background: rgba(192, 192, 192, 0.6);
+
+        }
+
+        header.menu {
+            border-style: solid;
+            background: #ccc;
+            background-image: url(assets/sketch/images/nycst.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            box-sizing: border-box;
+            border-color:#09BC8A;
+            width: 1000px;
+            margin: auto;
+            color: yellow;
+            text-align: center;
+        }
+
+        .box1 {
+            display: inline-block;
+            width: 300px;
+            text-align: left;
+            padding: 30px;
+            background-color: #ddd;
+            border-radius: 3px;
+            margin: 15px;
+            vertical-align: top;
+            border-style: solid;
+            border-color: #09BC8A;
+            height: 300px;
+            background-image: url(assets/sketch/images/isl.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            font-style: italic;
+            color: #00171F;
+        }
+
+        .box2 {
+            display: inline-block;
+            width: 300px;
+            text-align: left;
+            padding: 30px;
+            background-color: #ddd;
+            border-radius: 3px;
+            margin: 15px;
+            border-style: solid;
+            border-color: #09BC8A;
+            height: 300px;
+            background-image: url(assets/sketch/images/sky.jpg);
+            background-repeat: no-repeat;
+            color: #00171F;
+            font-style: italic;
+        }
+
+        .con {
+            text-align: center;
+            padding: 15px;
+        }
+        
+      
+    </style>
+<div class="anm">
+    <ul class="navbar">
+        <li class="navc"><a class="active" href="index.html">home</a></li>
+        <li class="navc"><a href="about.html">about</a></li>
+        <li class="navc"><a href="contact.html">contact</a></li>
+    </ul>
+    </div>
+    <h1 id="h">
+        <p class="one">My Website</p>
+    </h1>
 </head>
 <header class="menu">
-	<u>About Myself</u>
-	<br>
+    <h2><b><u>About Myself</u></b></h2>
     <h3>
-    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    </h3>   
-    
+        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </h3>
+
 </header>
 <br><br>
 <center>
-	<u>
-		<h2 id="content">CONTENT</h2>
-	</u>
+    <u>
+        <h2 id="content">CONTENT</h2>
+    </u>
 </center>
 
 <body>
-	<div class="con">
-		<div class="box1">
+    <div class="con">
+        <div class="box1">
             <h3>
-            <center><u>Interest</u></center>
-		
-			<ul>
-				<li> Math </li>
-				<li>Science</li>
-				<li> Music</li>
-					</ul>
+                <center><u>What is Lorem Ipsum?</u></center>
+
+                <ul>
+                    <li> simply dummy text</li>
+                    <li>industry's standard dummy text ever since the 1500s</li>
+                    <li> It has survived not only five centuries</li>
+                </ul>
             </h3>
-</div>
+        </div>
 
 
-		<div class="box2">
+        <div class="box2">
             <h3>
-            <center><u>Goals</u></center>
-			
-			<ul>
-				<li>Graduate from college with a Bachelors degree in mechanical engineering </li>
-				<li>Find a well paying job </li>
-                
-			</ul>
+                <center><u>Why do we use it?</u></center>
+
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
             </h3>
 
 
-		</div>
-	</div>
+        </div>
+    </div>
 
 
 </body>
 <br><br><br><br><br>
-	<footer><hr width="100%" height="5" borderstyle="solid" color="white">
-		<center><strong style="color:black">Copyright&#169; 2019 David Benitez All Rights Reserved.</strong></center> </footer>
+<footer>
+    <hr width="100%" height="5" borderstyle="solid" color="white">
+    <center><strong style="color:black">Copyright&#169; 2019 David Benitez All Rights Reserved.</strong></center>
+</footer>
 </html>
