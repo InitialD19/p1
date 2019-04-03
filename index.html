@@ -3,7 +3,7 @@
 <title>First portfolio website</title>
 
 <head>
-    <style type="text/css">
+    <style type="text/css" href="style.css">
         body {
             font-family: serif;
             color: #000;
@@ -17,7 +17,16 @@
 	padding: 0px;
 	margin: 0px;
 }
-
+        .col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
 
         .text {
             color: yellow;
