@@ -1,45 +1,60 @@
 <!doctype html>
 <html>
 <title>About Me Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <style type="text/css">
         
-   
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;  
-     background-color: #333;
-}
-        
-.nav {
-    float:left;    
-}
-        .nav a{
+        @media screen and (max-width: 700px) {
+            .column {
+                float: none;
+            }
+
+            #c1,
+            #c2 {
+                width: 100%;
+            }
+        }
+
+
+
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .nav {
+            float: left;
+        }
+
+        .nav a {
             display: block;
             padding: 14px 16px;
             text-align: center;
-            text-decoration: none;        
+            text-decoration: none;
         }
-        
-        .nav a:hover{
+
+        .nav a:hover {
             background-color: #ccc;
         }
-        .tab{
-            color:white;
+
+        .tab {
+            color: white;
         }
-        
-        .links{
-            color:red;
+
+        .links {
+            color: red;
         }
-        
-        .active{
-        background-color: aqua;
-        color:#ccc;
+
+        .active {
+            background-color: aqua;
+            color: #ccc;
         }
-        
+
         header.top {
             color: white;
             border-color: white;
@@ -51,7 +66,7 @@
             background-position: bottom;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;   
+            background-attachment: fixed;
             margin: auto;
             width: 600px;
 
@@ -85,14 +100,14 @@
             box-shadow: 5px 10px white;
             font-family: serif;
             margin: auto;
-            width: 1000px;
-            background-image: url(assets/sketch/images/range.jpg);
+            width:auto;
+            background-image: url(assets/sketch/images/galaxy.jpg);
             background-size: cover;
-            background-position: bottom;
+            background-position: center;
 
         }
 
-        #Brick {
+        #c2 {
             border-style: solid;
             padding: 15px;
             background-color: #ccc;
@@ -101,7 +116,7 @@
             background-position: center;
             color: white;
             margin: auto;
-            width: 1000px;
+            width: auto;
 
         }
 
@@ -126,24 +141,24 @@
 
 
 <body class="bod">
-    
+
     <ul class="navbar">
-            
-            <li class="nav"><a class="tab" href="index.html">Home </a></li>
-            <li class="nav"><a class="active" class="tab" href="about.html">About </a></li>
-            <li class="nav"><a class="tab"href="contact.html">Contact </a></li>
-            </ul>
-    
+
+        <li class="nav"><a class="tab" href="index.html">Home </a></li>
+        <li class="nav"><a class="active" class="tab" href="about.html">About </a></li>
+        <li class="nav"><a class="tab" href="contact.html">Contact </a></li>
+    </ul>
+
     <header class="top">
         <h1><u>
                 <center>Welcome to my Webpage</center>
             </u></h1>
     </header>
     <nav>
-        
-        
-        
-            <ul>
+
+
+
+        <ul>
             <br>
             <center>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/gpGyCJ7u0qs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -160,10 +175,13 @@
             </center>
         </b></h2>
     <h3>
-        <p id="me">Hello my name is <a class="links" href="contact.html" target="_blank">David Benitez,</a> I am currently studying for Tech Start in <a class="links" href="https://obtjobs.org/home/" target="_blank">OBT</a>. My main intrest is studying for automotive engineering. The main reason I joined Tech Start mainly to get a better job, and learn more about computers. After earning enough money I am planning on going back to school and persue my goals in life. One school that has intrested me is <a class="links" href="https://www.uti.edu/request-info" target="_blank">UTI</a>, this school teaches Engineering for different type of vehicles both, land and sea. My main goal is to hopefully one day work in the Formula1, <a class="links" href="https://www.formula1.com/en/championship/inside-f1/understanding-f1-racing.html" target="_blank">F1</a> is "an international form of auto racing, whose races are called Grand Prix". I was intrested since when I was a kid when I use to play racing games on my PlaStation&#169;. Another Subject that intrest me is astronomy. As a kid I always wondered if we could all go to the moon or beyond. NASA is one of my dream jobs and one way I could reach this goal is by studying aeronautics at <a class="links" href="https://www.vaughn.edu/engineering-technology-degrees/" target="_blank">Vaughn College</a>. The Main reason engineering has always intrested me is because I like Hands on work and also like seeing progress with my work.
-        </p><br><br>
+        <div class="column" id="c1">
+            <p id="me">Hello my name is <a class="links" href="contact.html" target="_blank">David Benitez,</a> I am currently studying for Tech Start in <a class="links" href="https://obtjobs.org/home/" target="_blank">OBT</a>. My main intrest is studying for automotive engineering. The main reason I joined Tech Start mainly to get a better job, and learn more about computers. After earning enough money I am planning on going back to school and persue my goals in life. One school that has intrested me is <a class="links" href="https://www.uti.edu/request-info" target="_blank">UTI</a>, this school teaches Engineering for different type of vehicles both, land and sea. My main goal is to hopefully one day work in the Formula1, <a class="links" href="https://www.formula1.com/en/championship/inside-f1/understanding-f1-racing.html" target="_blank">F1</a> is "an international form of auto racing, whose races are called Grand Prix". I was intrested since when I was a kid when I use to play racing games on my PlaStation&#169;. Another Subject that intrest me is astronomy. As a kid I always wondered if we could all go to the moon or beyond. NASA is one of my dream jobs and one way I could reach this goal is by studying aeronautics at <a class="links" href="https://www.vaughn.edu/engineering-technology-degrees/" target="_blank">Vaughn College</a>. The Main reason engineering has always intrested me is because I like Hands on work and also like seeing progress with my work.
+            </p>
+        </div>
+        <br><br>
         <hr width="100%" height="5" borderstyle="solid" color="black">
-        <div id="Brick">
+        <div class="column" id="c2">
             <u>
                 <h2><a href="https://fontmeme.com/graffiti-fonts/"><img src="https://fontmeme.com/permalink/190313/88298846477469312192f0b75cec7619.png" alt="graffiti-fonts" border="0"></a></h2>
             </u>
@@ -174,6 +192,7 @@
 
 
             <h2><a href="https://fontmeme.com/graffiti-fonts/"><img src="https://fontmeme.com/permalink/190313/39b8f644c64aaf9a92395ac3b0cb32c8.png" alt="graffiti-fonts" border="0"></a></h2>
+
 
             <ul>
                 <li>Video Games</li>
@@ -191,7 +210,7 @@
     <center><iframe width="560" height="315" src="https://www.youtube.com/embed/WawGK3umBkQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
     <center><iframe width="560" height="315" src="https://www.youtube.com/embed/79ywZRmc3-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br><br><br>
 
-   
+
 
     <footer id="foot">
         <hr width="100%" height="5" borderstyle="solid" color="white">
